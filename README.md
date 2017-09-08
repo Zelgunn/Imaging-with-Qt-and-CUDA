@@ -23,13 +23,13 @@ There are some imaging functions :
 
 ## Build
 You will need to build CUDA sources before building the Qt project and link the resulting lib to the project :
-'''
+```
 win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../Imaging-functions-CUDA/x64/Release -lImaging-functions-CUDA
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../Imaging-functions-CUDA/x64/Release -lImaging-functions-CUDA
 
 INCLUDEPATH += $$PWD/../Imaging-functions-CUDA/x64/Release \
             "D:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include"
 DEPENDPATH += $$PWD/../Imaging-functions-CUDA/x64/Release
-'''
+```
 
 To build CUDA sources, I used Visual Studio (2017, with NVIDIA Nsight from CUDA 9.0).
