@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QGraphicsView" name="graphicsView"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionOuvrir_image"/>
+    <addaction name="actionSauvegarder_image"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <addaction name="menuFichier"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSoustraire_images"/>
+   <addaction name="actionFlou_gaussien"/>
+   <addaction name="actionDoG"/>
+   <addaction name="actionPyramide_de_diff_rences_de_gaussiennes"/>
+   <addaction name="actionKeyPoints"/>
+  </widget>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionSoustraire_images">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/sub.png</normaloff>:/icons/sub.png</iconset>
+   </property>
+   <property name="text">
+    <string>Soustraire images...</string>
+   </property>
+  </action>
+  <action name="actionFlou_gaussien">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/figure_42.png</normaloff>:/icons/figure_42.png</iconset>
+   </property>
+   <property name="text">
+    <string>Flou gaussien</string>
+   </property>
+  </action>
+  <action name="actionOuvrir_image">
+   <property name="text">
+    <string>Ouvrir image...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSauvegarder_image">
+   <property name="text">
+    <string>Sauvegarder image...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionDoG">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/DoG.png</normaloff>:/icons/DoG.png</iconset>
+   </property>
+   <property name="text">
+    <string>DoG</string>
+   </property>
+  </action>
+  <action name="actionPyramide_de_diff_rences_de_gaussiennes">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/Icône Pyramide.png</normaloff>:/icons/Icône Pyramide.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pyramide de différences de gaussiennes</string>
+   </property>
+  </action>
+  <action name="actionKeyPoints">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/KeyPointDectect.png</normaloff>:/icons/KeyPointDectect.png</iconset>
+   </property>
+   <property name="text">
+    <string>KeyPoints</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionQuitter</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

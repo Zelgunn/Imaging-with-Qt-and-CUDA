@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/DoG.png</file>
+        <file>icons/figure_42.png</file>
+        <file>icons/Icône Pyramide.png</file>
+        <file>icons/ImageComparison.png</file>
+        <file>icons/KeyPointDectect.png</file>
+        <file>icons/Next-icon.png</file>
+        <file>icons/Previous-icon.png</file>
+        <file>icons/sub.png</file>
+    </qresource>
+</RCC>
