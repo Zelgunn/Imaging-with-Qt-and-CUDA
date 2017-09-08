@@ -18,8 +18,8 @@ There are some imaging functions :
 ![Alt text](Illustrations/Imaging-with-CUDA_DoG.png)
 
 ## Requierements
--[Qt](https://www.qt.io/)
--[CUDA](https://developer.nvidia.com/cuda-downloads) or [CUDA 9.0 RC](https://developer.nvidia.com/cuda-release-candidate-download)
+- [Qt](https://www.qt.io/)
+- [CUDA](https://developer.nvidia.com/cuda-downloads) or [CUDA 9.0 RC](https://developer.nvidia.com/cuda-release-candidate-download)
 
 ## Build
 You will need to build CUDA sources before building the Qt project and link the resulting lib to the project :
