@@ -1,10 +1,10 @@
 # Imaging (with Qt & CUDA)
 
 ## Table of contents
-[About this project](#about-this-project)
-[Illustrations](#illustrations)
-[Requirements](#requirements)
-[Build](#build)
+[About this project](#about-this-project)  
+[Illustrations](#illustrations)  
+[Requirements](#requirements)  
+[Build](#build)  
 
 ## About this project
 The goal of this project is to use CUDA with Qt.
